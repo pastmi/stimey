@@ -1,0 +1,262 @@
+{
+    "good":"Good",
+    "nice":"Nice",
+    "nextDay":"Next Day",
+    "livingRoom":"Living room",
+    "freeTime":"Free Time",
+    "work":"Work",
+    "tWork":"Type Work",
+    "relax":"Relax",
+    "tRelax":"Type Relax",
+    "university":"University",
+    "euro":"euro",
+    "hour":"hour",
+    "hours":"hours",
+    "left":"left",
+    "study":"Study",
+    "fullTime":"Full Time",
+    "distance":"Distance",
+    "yourself":"Yourself",
+    "S1_part_05_w": "Rocket assist",
+    "S1_part_06_w":"Second stage engine",
+    "S1_part_01_w": "Take off area", 
+    "S1_part_02_w": "Loading elevator",
+    "S1_part_03_w": "Support",
+    "S1_part_04_w": "Spacecraft body",
+    "S1_part_07_w": "Access door",
+    "S1_part_08_w": "Window",
+    "S1_part_09_w": "Wireless antennas" ,
+    "S2b_part_01_w": "Spacecraft body", 
+    "S2b_part_02_w": "Window",
+    "S2b_part_03_w": "Airlock",
+    "S2b_part_04_w": "Reaction control system jet",
+    "S2b_part_05_w": "Solar batteries",
+    "S2b_part_06_w": "Warp drive",
+    "S2b_part_07_w": "Orientation engine",
+    "S2b_part_08_w": "An Airlock",
+    "S2b_part_09_w": "Aerials of radio system",
+    "S2b_part_10_w": "An optical orientation instrument",
+    "S3_part_01_w": "Warp drive", 
+    "S3_part_02_w": "Off base video cameras",
+    "S3_part_03_w": "Telemeters",
+    "S3_part_04_w": "Habitation module",
+    "S3_part_05_w": "Accommodation module",
+    "S3_part_06_w": "Solar batteries",
+    "S3_part_07_w": "An Airlock",
+    "S3_part_08_w": "Command module",
+    "S3_part_09_w": "Pressure tight access hatch",
+    "S3_part_10_w": "Onboard control system",   
+    "S3_part_11_w": "Onboard systems section",   
+    "S3_part_12_w": "An optical orientation instrument",   
+    "S3_part_13_w": "Spacecraft body",   
+    "S3_part_14_w": "Window", 
+    "S3_part_15_w": "Wireless antennas" , 
+
+   
+
+      
+
+     "person0":{
+         "name":"Colleges",
+         "fullCost":"2",
+         "distanceCost":"1",
+         "yourselfCost":"0",
+         "fullDay":"600",
+         "distanceDay":"750",
+         "yourselfDay":"900"
+
+     },
+     "person1":{
+         "name":"University",
+         "fullCost":"4",
+         "distanceCost":"2",
+         "yourselfCost":"0",
+         "fullDay":"400",
+         "distanceDay":"600",
+         "yourselfDay":"800"
+     },
+     "person2":{
+         "name":"Master’s program",
+         "fullCost":"8",
+         "distanceCost":"4",
+         "yourselfCost":"0",
+         "fullDay":"300",
+         "distanceDay":"600",
+         "yourselfDay":"900"
+     },
+     "person3":{
+         "name":"Doctoral program",
+         "fullCost":"20",
+         "distanceCost":"5",
+         "yourselfCost":"0",
+         "fullDay":"200",
+         "distanceDay":"600",
+         "yourselfDay":"800"
+     },
+     "work0":{
+        "name":"Delivery boy",
+        "level":"Школа",
+        "eduction":"0",
+        "speciality":"0",
+        "salaryInOur":"2",
+        "hoursAtWork": "4",
+        "100daySalary": "800"
+     },
+     "work1":{
+        "name":"Worker",
+        "level":"Колледж",
+        "eduction":"1",
+        "speciality":"1",
+        "salaryInOur":"2",
+        "hoursAtWork": "4",
+        "100daySalary": "2000"
+     },
+     "work2":{
+        "name":"An engineer",
+        "level":"Колледж",
+        "eduction":"1",
+        "speciality":"2",
+        "salaryInOur":"6",
+        "hoursAtWork": "6",
+        "100daySalary": "3600"
+     },
+     "work3":{
+        "name":"An engineer",
+        "level":"Университет",
+        "eduction":"2",
+        "speciality":"2",
+        "salaryInOur":"7",
+        "hoursAtWork": "7",
+        "100daySalary": "4900"
+     },
+     "work4":{
+        "name":"Boss",
+        "level":"Университет",
+        "eduction":"2",
+        "speciality":"3",
+        "salaryInOur":"13",
+        "hoursAtWork": "6",
+        "100daySalary": "7800"
+     },
+     "work5":{
+        "name":"Boss",
+        "level":"Университет",
+        "eduction":"3",
+        "speciality":"3",
+        "salaryInOur":"16",
+        "hoursAtWork": "6",
+        "100daySalary": "9600"
+     },
+     "work6":{
+        "name":"Manager",
+        "level":"Магистратура",
+        "eduction":"4",
+        "speciality":"4",
+        "salaryInOur":"20",
+        "hoursAtWork": "4",
+        "100daySalary": "8000"
+     },
+     "work7":{
+        "name":"Manager",
+        "level":"Магистратура",
+        "eduction":"4",
+        "speciality":"4",
+        "salaryInOur":"30",
+        "hoursAtWork": "4",
+        "100daySalary": "12000"
+     },
+     "work8":{
+        "name":"The owner",
+        "level":"Докторантура",
+        "eduction":"5",
+        "speciality":"5",
+        "salaryInOur":"100",
+        "hoursAtWork": "2",
+        "100daySalary": "20000"
+     },
+     "basicTime0":{
+        "education":"Школа",
+        "work":"Курьер",
+        "hourSleeping":"10",
+        "hourEduaction":"0",
+        "hourWorking":"4",
+        "hourStudying":"0",
+        "hourRest":"11"
+     },
+     "basicTime1":{
+        "education":"Колледж",
+        "work":"Рабочий",
+        "hourSleeping":"8",
+        "hourEduaction":"6",
+        "hourWorking":"5",
+        "hourStudying":"4",
+        "hourRest":"2"
+     },
+     "basicTime2":{
+        "education":"Колледж",
+        "work":"Инженер",
+        "hourSleeping":"8",
+        "hourEduaction":"6",
+        "hourWorking":"6",
+        "hourStudying":"3",
+        "hourRest":"2"
+     },
+     "basicTime3":{
+        "education":"Университет",
+        "work":"Инженер",
+        "hourSleeping":"7",
+        "hourEduaction":"4",
+        "hourWorking":"7",
+        "hourStudying":"4",
+        "hourRest":"3"
+     },
+     "basicTime4":{
+        "education":"Университет",
+        "work":"Менеджер",
+        "hourSleeping":"7",
+        "hourEduaction":"4",
+        "hourWorking":"6",
+        "hourStudying":"5",
+        "hourRest":"3"
+     },
+     "basicTime5":{
+        "education":"Магистратура",
+        "work":"Начальник",
+        "hourSleeping":"7",
+        "hourEduaction":"3",
+        "hourWorking":"4",
+        "hourStudying":"8",
+        "hourRest":"3"
+     },
+     "basicTime6":{
+        "education":"Докторантура",
+        "work":"Владелец",
+        "hourSleeping":"7",
+        "hourEduaction":"2",
+        "hourWorking":"2",
+        "hourStudying":"11",
+        "hourRest":"4"
+
+     },
+     "relax1":{
+        "type":"Wander along the park",
+        "amount":"1"
+     },
+     "relax2":{
+        "type":"Sport",
+        "amount":"2"
+     },
+     "relax3":{
+        "type":"Reading",
+        "amount":"3"
+     },
+     "relax4":{
+        "type":"Rest with friends",
+        "amount":"4"
+     },
+     "relax5":{
+        "type":"Games",
+        "amount":"5"
+     },
+	"mood":["Super","Good","Bad"]
+}
