@@ -8,22 +8,34 @@
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet" href="/css/roket.css">
 	</head>
-		<?php
-		if ( isset( $_GET ) ) 
-			$data = $_GET;
-		if ( isset ( $data['lang'] ) ) {
-			$lang = json_decode(file_get_contents('http://' . $_SERVER['HTTP_HOST'] . '/lang/' . $data['lang'] . '.json'),true);
-			$name_lang = $data['lang'];
-		} else {
-			$lang = json_decode(file_get_contents('http://' . $_SERVER['HTTP_HOST'] . '/lang/en.json'),true);
-			$name_lang = 'en';
-		}
-		?>
+	<?php
+	if ( isset( $_GET ) ) 
+		$data = $_GET;
+	if ( isset ( $data['lang'] ) ) {
+		$lang = json_decode(file_get_contents('http://' . $_SERVER['HTTP_HOST'] . '/lang/' . $data['lang'] . '.json'),true);
+		$name_lang = $data['lang'];
+	} else {
+		$lang = json_decode(file_get_contents('http://' . $_SERVER['HTTP_HOST'] . '/lang/en.json'),true);
+		$name_lang = 'en';
+	}
+	?>
 	<body data-lang="<?php if (isset($name_lang)) echo $name_lang; ?>">
 		<main>
+			<div class='intro-block	'>
+				<div id='intro'>
+				<div id="navigationBoxes">
+
+				</div>
+
+				<div id="pictureSlider">
+
+				</div>
+			</div>
+				</div>
 			<div class ="newDayOverflow">
 
 			</div>
+		
 			<div class ="greyBlock">
 
 			</div>
@@ -69,7 +81,7 @@
 					<div class="status-block"><img src="/img/health.png" alt=""><p class="health"></p></div>
 					<div class="status-block"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
 					<div class="status-block"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 
-						<div class="num"  id="0">7</div>
+						<div class="num"  id="0">8</div>
 						<div class="select"  id="div0">
 						</div>
 						</div></div>
@@ -78,7 +90,7 @@
 						<div class="select" id="div1"></div>
 						</div></div>
 					<div class="status-block"><img src="/img/study.png" alt=""><div class="selectButton" >
-						<div class="num" id="2">3</div>
+						<div class="num" id="2">4</div>
 						<div class="select" id="div2"></div>
 						</div></div>
 					<div class="status-block"><img src="/img/job.png" alt=""><div class="selectButton" >
@@ -325,8 +337,7 @@
 						<div class="dayTitle"><span class="dayN"></span> Day </div>		
 						<div><span class="dayAvailable"></span> days are available</div>		
 						<div><span class="dayEuroPurchase"></span> euro is charged for the purchase</div>		
-						<div><span class="dayEuroEarned">0</span> euro is earned</div>		
-						<div><span class="dayInvented">0</span> item is invented</div>		
+						<div><span class="dayEuroEarned">0</span> euro is earned</div>			
 						<div class="buttonRun"> 
 							<p id="new-day-cloase">Next</p>
 						</div>
@@ -346,7 +357,7 @@
 							</div>
 						</div>
 					</div>					
-          
+
 					<div class="new-day-dayAvelible">
 						<div class="new-day-ask-center">
 							<h3>Well done</h3>	
@@ -356,8 +367,8 @@
 							</div>
 						</div>
 					</div>
-					
-					
+
+
 					<div class="new-day-dayAvelible-mood">
 						<div class="new-day-ask-center-mood">
 							<h3>Well done</h3>	
@@ -496,9 +507,9 @@
 							</div>
 						</div>
 					</div>
-					
-				
-					
+
+
+
 				</div>
 			</div>
 			<div class="overlay"></div>
@@ -512,15 +523,16 @@
 		<script src="/js/profile.js"></script>
 		<script src="/js/room.js"></script>
 		<script src="/js/change.js"></script>
-
+		<script src="/js/intro.js"></script>
 		<script src="/js/freeTime.js"></script>
 		<script src="/js/requests.js"></script>
 		<script src="/js/imge_to_data_url.js"></script>
-		
+		<script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
 
 		<script src="/js/laboratory.js"></script>
-		        <script src="/js/rockets.js"></script>
-<!--		<script src="/js/rocket.js"></script>-->
+		<script src="/js/rockets.js"></script>
+		<!--		<script src="/js/rocket.js"></script>-->
 		<script src="/js/ava.js"></script>
 
 	</body>
