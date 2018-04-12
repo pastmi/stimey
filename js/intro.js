@@ -8,47 +8,54 @@ var easing = "easeOutCubic";
 // Variable to store the images we need to set as background
 // which also includes some text and url's.
 var photos = [ {
-		"title" : "Aperture",
-		"cssclass" : "cam",
+		"title" : "Hello",
+		"cssclass" : "Aperture",
 		"image" : "1.png",
-		"text" : "In optics, an aperture is a hole or an opening through which light travels. More specifically, the aperture of an optical system is the opening that determines the cone angle of a bundle of rays that come to a focus in the image plane. The aperture determines how collimated the admitted rays are, which is of great importance for the appearance at the image plane. If an aperture is narrow, then highly collimated rays are admitted, resulting in a sharp focus at the image plane.",
+		"text" : "The aim of the game Rocket Scientist is to build a spaceship to fulfill a mission to other planets. A spaceship can be built only by a person who is intelligent and good at different things. And you will be able to do it if you learn how to allocate your time correctly. ",
+		"url" : 'http://www.sxc.hu/photo/1270466',
+		"urltext" : 'View picture'
+	},{
+		"title" : "Living room",
+		"cssclass" : "Aperture",
+		"image" : "1.png",
+		"text" : "In the left part of the screen you can see your progress, the amount of money, your state of health and mood.  Hope you remember that the researcher’s living conditions can influence their mood and health. Click the objects in the living room  to find out their cost and buy.",
 		"url" : 'http://www.sxc.hu/photo/1270466',
 		"urltext" : 'View picture'
 	}, {
-		"title" : "Clouds",
-		"cssclass" : "clouds",
+		"title" : "Rocket",
+		"cssclass" : "Aperture",
 		"image" : "2.png",
-		"text" : "A cloud is a visible mass of water droplets or frozen ice crystals suspended in the Earth's atmosphere above the surface of the Earth or other planetary body. Clouds in the Earth's atmosphere are studied in the nephology or cloud physics branch of meteorology. Two processes, possibly acting together, can lead to air becoming saturated: cooling the air or adding water vapor to the air. Generally, precipitation will fall to the surface; an exception is virga which evaporates before reaching the surface.",
+		"text" : "The rocket building moves you closer to the main aim but you won’t be a success without money and education! Click the rocket parts and invent!",
 		"url" : 'http://en.wikipedia.org/wiki/Cloud',
 		"urltext" : 'More info'
 	}, {
-		"title" : "Keyboard",
-		"cssclass" : "key",
+		"title" : "Laboratory",
+		"cssclass" : "Aperture",
 		"image" : "3.png",
-		"text" : "The incredibly thin Apple Wireless Keyboard sits on your desk surrounded by nothing but glorious space. It’s cable-free, so you’re free to type wherever you like — with the keyboard in front of your computer or even on your lap. Not only does the Apple Wireless Keyboard come standard with the new iMac, it’s perfect for any Mac with Bluetooth wireless technology.",
+		"text" : "Your inventions will help you in the rocket designing. Remember to get some equipment for the laboratory! Click the equipment and buy them!",
 		"url" : 'http://www.apple.com/keyboard/',
 		"urltext" : 'Get it now'
 	}, {
-		"title" : "Flowers",
-		"cssclass" : "flowers",
+		"title" : "Study",
+		"cssclass" : "Aperture",
 		"image" : "4.png",
-		"text" : "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower).",
+		"text" : "An ignorant person isn’t capable of designing a spaceship. Move forward, get better educational level and you will be able to do it! Click an avatar , choose suitable mode of education and study!",
 		"url" : 'http://www.sxc.hu/photo/1339442',
 		"urltext" : 'View picture'
 	} ,
 			  {
-		"title" : "Flowers",
-		"cssclass" : "flowers",
+		"title" : "Work",
+		"cssclass" : "Aperture",
 		"image" : "5.png",
-		"text" : "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower).",
+		"text" : "You can’t buy all the necessary things without money. Your job gives you money. You know that higher level of education makes feasible high salaries.",
 		"url" : 'http://www.sxc.hu/photo/1339442',
 		"urltext" : 'View picture'
 	} ,
 		{
-		"title" : "Flowers",
-		"cssclass" : "flowers",
+		"title" : "Free time",
+		"cssclass" : "Aperture",
 		"image" : "6.png",
-		"text" : "A flower, sometimes known as a bloom or blossom, is the reproductive structure found in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The biological function of a flower is to effect reproduction, usually by providing a mechanism for the union of sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different individuals in a population) or allow selfing (fusion of sperm and egg from the same flower).",
+		"text" : "It’s impossible only to study and work. You should regularly have rest. The chosen type of rest affects your state of health and mood. You can’t achieve great results with bad health and mood.Trust yourself and you will succeed!",
 		"url" : 'http://www.sxc.hu/photo/1339442',
 		"urltext" : 'View picture'
 	} ,
@@ -89,10 +96,10 @@ $(function() {
 	var cache = [];
  	for(var i = 1; i < photos.length + 1; i++) {
 		$("<a />")
-			.html(i===7 ? photos[i-1].title : i)
+			.html(i===8 ? photos[i-1].title : i)
 			.data("index", i-1)
 			.attr("title", photos[i-1].title)
-			.click(	i===7 ? ()=>exit() : function() {showImage($(this))})
+			.click(	i===8 ? ()=>exit() : function() {showImage($(this))})
 			.appendTo(
 				$("<li />")
 					.appendTo(".navbox ul")

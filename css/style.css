@@ -1344,20 +1344,20 @@ border-top-right-radius: 5px;}
 	padding: 5px;
 	
 	text-decoration:none; 
-	color85#2c3402;
-	font: bold 14px Helvetica, Arial, Sans-serif; 
+	color: #2c3402;
+	font-size :  14px ; 
 	
 }
 .navbox ul li a:hover { background-position:bottom; color:#000; }	
 .navbox ul li a.active { color:#777; }
 
-.navbox h2 { padding:50px 20px 0 20px; font: bold 40px Helvetica, Arial, Sans-serif; text-shadow: 0px 2px 6px #333; color:#eee; }
-.navbox p { padding:20px 20px 20px 20px; font-family: "Segoe UI","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Arial,Tahoma,Verdana,sans-serif; font-size:13px; color:#111; }
+.navbox h2 { padding:50px 20px 0 20px; font-size:  40px ; text-shadow: 0px 2px 6px #333; color:#eee; }
+.navbox p { padding:20px 20px 20px 20px;  font-size:18px; color:#111; }
 .navbox p a { text-decoration:none;  text-transform:uppercase; letter-spacing: 10px; color:#eee; }
 .navbox p a:hover { border-bottom:1px dotted; }
 .navbox p.bottom { position:absolute; bottom:5px; right:5px; }
 
-.cam { background: rgba(232, 226, 179,0.85); }
+.Aperture { background: rgba(232, 226, 179,0.9); }
 .clouds { background: rgba(232, 226, 179,0.85); }
 .key { background: rgba(232, 226, 179,0.85); }
 .flowers { background: rgba(232, 226, 179,0.85); }
