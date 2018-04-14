@@ -10,7 +10,7 @@ var easing = "easeOutCubic";
 var photos = [ {
 		"title" : "Hello",
 		"cssclass" : "Aperture",
-		"image" : "1.png",
+		"image" : "START.png",
 		"text" : "The aim of the game Rocket Scientist is to build a spaceship to fulfill a mission to other planets. A spaceship can be built only by a person who is intelligent and good at different things. And you will be able to do it if you learn how to allocate your time correctly. ",
 		"url" : 'http://www.sxc.hu/photo/1270466',
 		"urltext" : 'View picture'
