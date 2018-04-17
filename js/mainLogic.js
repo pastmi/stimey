@@ -681,6 +681,7 @@ $.ajax({
     Promise.resolve()
       .then(() => {
         //user,day,money,work,study,stadyFull,stadyDist,stadyYor,lang
+		introStart(lang);
         logic = new Logic(
           data.id,
           data.login,
