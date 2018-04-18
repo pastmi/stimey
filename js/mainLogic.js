@@ -699,7 +699,7 @@ $.ajax({
 				lang,
 				Number(data.study_done),
 				Number(data.day_available),
-				Number(data.things_explroed)
+				Number(data.things_explored)
 			);
 			logic.startGame();
 			logic.contexmenuArticle("personOpen", "persons");
