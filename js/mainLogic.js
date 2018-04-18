@@ -714,9 +714,9 @@ $.ajax({
 				return $.getJSON("/lang/"+lang+".json");
 			})
 				.then(inf => {
-				room = new Room(Number(data.id));
+				room = new Room(Number(data.id),inf);
 				room.init();
-				laboratory = new Laboratory(Number(data.id));
+				laboratory = new Laboratory(Number(data.id),inf);
 				laboratory.init();
 				rockets = new Rockets(Number(data.id), Number(data.level_explore),inf);
 				rockets.init();
