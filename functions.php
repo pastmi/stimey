@@ -19,7 +19,7 @@ function add_user ($login) {
 	    $user->studyDone = 0;
 		$user->dayAvailable = 10;
 	    $user->level_explore = 1;
-		$user->things_explroed = 0;
+		$user->things_explored = 0;
 
 
     $room = R::dispense('room');

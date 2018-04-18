@@ -77,7 +77,7 @@
 				</div>
 				<div class="status">
 					<div class="status-block"><img src="/img/money.png" alt=""><p class="money-block"></p></div>
-					<div class="status-block"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">13%</p></div>
+					<div class="status-block"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
 					<div class="status-block"><img src="/img/health.png" alt=""><p class="health"></p></div>
 					<div class="status-block"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
 					<div class="status-block"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 

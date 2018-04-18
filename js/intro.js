@@ -68,6 +68,7 @@ let introStart = function (lang) {
 		}
 					 ];
 		start(photos)
+		
 	});
 }
 let start = function(photos) {
@@ -80,6 +81,7 @@ let start = function(photos) {
 
 	var cache = [];
 	for(var i = 1; i < photos.length + 1; i++) {
+		
 		$("<a />")
 			.html(i===8 ? photos[i-1].title : i)
 			.data("index", i-1)
