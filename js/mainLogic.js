@@ -216,7 +216,7 @@ class Logic {
 		for (let a = 0; a < 5; a++) {
 			$("#work" + a).removeClass("workActive");
 		}
-		let num = parseInt(ev.target.getAttribute("work"));
+		let num = parseInt(ev.target.getAttribute("work"))+1;
 		this.work = num;
 		$("#work" + num).addClass("workActive");
 		$(".room .about-works").css("display", "none");
@@ -298,7 +298,7 @@ class Logic {
 					flag = 0;
 				} else {
 					let work = parseInt($("#3").text());
-
+					
 					$.ajax({
 						type: "POST",
 						url: "http://" + window.location.hostname + "/page.php",

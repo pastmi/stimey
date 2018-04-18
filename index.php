@@ -337,7 +337,7 @@
 						<div class="dayTitle"><span class="dayN"></span> Day </div>		
 						<div><span class="dayAvailable"></span> days are available</div>		
 						<div><span class="dayEuroPurchase"></span> euro is charged for the purchase</div>		
-						<div><span class="dayEuroEarned">0</span> euro is earned</div>			
+						<div><span class="dayEuroEarned">3</span> euro is earned</div>			
 						<div class="buttonRun"> 
 							<p id="new-day-cloase">Next</p>
 						</div>
