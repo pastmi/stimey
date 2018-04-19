@@ -63,7 +63,7 @@
 				</div>
 				<div class="menu-ava-right">
 					<div>
-						<img src="./img/avatar/avaMain/ava_colo1_fxxhdpi.png"class="avaChange rightAvaChange" id="ava-1"alt="">
+						<img src="./img/avatar/avaMain/ava_colo1_fxxhdpi.png" class="avaChange rightAvaChange" id="ava-1"alt="">
 						<img src="./img/avatar/avaMain/ava_colo2_fxxhdpi.png" class="avaChange rightAvaChange" id="ava-2"alt="">
 						<img src="./img/avatar/avaMain/ava_colo3_fxxhdpi.png" class="avaChange rightAvaChange" id="ava-3" alt="">
 					</div>
@@ -143,13 +143,13 @@
 						<canvas id="rocketCanvas" width="602" height="549"></canvas>
 						<div class="divButtonLaboratory">
 							<div class="buttonRun buttonLaboratory"> 
-								<p id="Level3">Level 3</p>
+								<p id="Level3"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 3</p>
 							</div>
 							<div class="buttonRun buttonLaboratory"> 
-								<p id="Level2">Level 2</p>
+								<p id="Level2"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 2</p>
 							</div>
 							<div class="buttonRun buttonLaboratory buttonLaboratoryActive"> 
-								<p id="Level1">Level 1</p>
+								<p id="Level1"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 1</p>
 							</div>
 						</div>
 					</div>
@@ -165,7 +165,7 @@
 								</div>
 							</div>
 							<div class="room-title">
-								<h1>Laboratory</h1>
+								<h1><?php if ( isset ( $lang['laboratory'] ) ) echo $lang['laboratory']; ?></h1>
 							</div>
 						</div>
 						<div class="content-lab" onload="initLaboratory();">
@@ -319,7 +319,7 @@
 						</div>
 					</div>
 					<div id="cooperation">
-						<p>COMING SOON</p>
+						<p><?php if ( isset ( $lang['coomingSoon'] ) ) echo $lang['coomingSoon']; ?></p>
 
 
 					</div>
@@ -334,36 +334,36 @@
 
 
 					<div class="new-day">
-						<div class="dayTitle"><span class="dayN"></span> Day </div>		
-						<div><span class="dayAvailable"></span> days are available</div>		
-						<div><span class="dayEuroPurchase"></span> euro is charged for the purchase</div>		
-						<div><span class="dayEuroEarned">3</span> euro is earned</div>			
+						<div class="dayTitle"><span class="dayN"></span><?php if ( isset ( $lang['day'] ) ) echo $lang['day']; ?></div>		
+						<div><span class="dayAvailable"></span><?php if ( isset ( $lang['daysAvailable'] ) ) echo $lang['daysAvailable']; ?></div>		
+						<div><span class="dayEuroPurchase"></span><?php if ( isset ( $lang['euroIsCharged'] ) ) echo $lang['euroIsCharged']; ?></div>		
+						<div><span class="dayEuroEarned">3</span><?php if ( isset ( $lang['euroIsEarned'] ) ) echo $lang['euroIsEarned']; ?></div>			
 						<div class="buttonRun"> 
-							<p id="new-day-cloase">Next</p>
+							<p id="new-day-cloase"><?php if ( isset ( $lang['next'] ) ) echo $lang['next']; ?></p>
 						</div>
 					</div>
 
 					<div class="new-day-ask">
 						<div class="new-day-ask-center">
-							<h3>Warning</h3>	
-							<span >The number of available </span>
-							<span>steps is 0.</span>
-							<span>We offer to fulfill some additional task.</span><br>
+							<h3><?php if ( isset ( $lang['next'] ) ) echo $lang['next']; ?></h3>	
+							<span ><?php if ( isset ( $lang['numberAvailable'] ) ) echo $lang['numberAvailable']; ?></span>
+							<span><?php if ( isset ( $lang['stepsIs'] ) ) echo $lang['stepsIs']; ?> 0.</span>
+							<span><?php if ( isset ( $lang['stepsIs'] ) ) echo $lang['stepsIs']; ?></span><br>
 
 							<div id="new-day-ask"><span class="askNum"></span><span>= </span><input class="numberInput" type="number"> <span class="askComp"> ?</span></div>	
 							<p class="hint"></p>	
 							<div class="new-day-buttonRun buttonRun"> 
-								<p id="new-day-ask-cloase">Check</p>
+								<p id="new-day-ask-cloase"><?php if ( isset ( $lang['check'] ) ) echo $lang['check']; ?></p>
 							</div>
 						</div>
 					</div>					
 
 					<div class="new-day-dayAvelible">
 						<div class="new-day-ask-center">
-							<h3>Well done</h3>	
-							<span >10 steps are available for use</span>
+							<h3><?php if ( isset ( $lang['welllDone'] ) ) echo $lang['welllDone']; ?></h3>	
+							<span >10 <?php if ( isset ( $lang['stepsAvailableForUse'] ) ) echo $lang['stepsAvailableForUse']; ?></span>
 							<div class="new-day-buttonRun buttonRun"> 
-								<p class="cloas-dayAvelible">Next</p>
+								<p class="cloas-dayAvelible"><?php if ( isset ( $lang['next'] ) ) echo $lang['next']; ?></p>
 							</div>
 						</div>
 					</div>
@@ -371,12 +371,12 @@
 
 					<div class="new-day-dayAvelible-mood">
 						<div class="new-day-ask-center-mood">
-							<h3>Well done</h3>	
-							<span class="new-day-mood-discription">Grandma has come and the mood goes up!</span>
+							<h3><?php if ( isset ( $lang['welllDone'] ) ) echo $lang['welllDone']; ?></h3>	
+							<span class="new-day-mood-discription"><?php if ( isset ( $lang['grandma'] ) ) echo $lang['grandma']; ?>!</span>
 
 
 							<div class="new-day-buttonRun-mood buttonRun"> 
-								<p class="cloas-dayAvelible-mood">Next</p>
+								<p class="cloas-dayAvelible-mood"><?php if ( isset ( $lang['next'] ) ) echo $lang['next']; ?></p>
 							</div>
 						</div>
 					</div>
@@ -386,7 +386,7 @@
 						<span class="about"></span>
 						<h4 class="alert"><b></b></h4>
 						<div class="buttonRun buttonLaboratoryMenu"> 
-							<p id="buyButton" href="S1_part_04_w">Buy</p>
+							<p id="buyButton" href="S1_part_04_w"><?php if ( isset ( $lang['buy'] ) ) echo $lang['buy']; ?></p>
 						</div>
 					</div>
 					<div class="about-rocket-things about-modal">
@@ -394,7 +394,7 @@
 						<span class="about"><span class="time"></span></span>
 						<h4 class="alert"><b></b></h4>
 						<div class="buttonRun buttonLaboratoryMenu"> 
-							<p id="buyButton" href="S1_part_04_w">Explore</p>
+							<p id="buyButton" href="S1_part_04_w"><?php if ( isset ( $lang['explore'] ) ) echo $lang['explore']; ?></p>
 						</div>
 					</div>
 					<div class="about-persons about-articles">
@@ -490,7 +490,7 @@
 								<div class="type-description">
 									<div class="type-full-desctription">
 										<span class="amountWork"></span>
-										<span> euro / hour</span>
+										<span> <?php if ( isset ( $lang['euro'] ) ) echo $lang['euro']; ?> / <?php if ( isset ( $lang['hour'] ) ) echo $lang['hour']; ?></span>
 									</div>
 								</div>
 							</div>
@@ -501,9 +501,9 @@
 					</div>
 					<div class="about-closed about-articles">
 						<div class="about-description">
-							<h2 class="type-closed">Closed</h2>
+							<h2 class="type-closed"><?php if ( isset ( $lang['closed'] ) ) echo $lang['closed']; ?></h2>
 							<div class="buttonRun "> 
-								<p id="closedOk">Ok</p>
+								<p id="closedOk"><?php if ( isset ( $lang['ok'] ) ) echo $lang['ok']; ?></p>
 							</div>
 						</div>
 					</div>
