@@ -670,64 +670,87 @@ var logic = null,
 	rockets = null,
 	ava = null,
 	freeTime = null,
-	lang = $("body").data("lang");
-$.ajax({
-  type: "POST",
-  url: "http://" + window.location.hostname + "/page.php",
-  dataType: "json",
-  data: {
-    functionname: "get_params_things", // пишешь какую функцию хочешь взять, список находится в page.php(set_params_user, get_params_things, add_user, isUser)
-    name: "users",
-    params: {
-      // это наш масив параметров
-      id: 1 //сюда передаешь id пользователя
-    }
-  },
-  success: function(data) {
-    Promise.resolve()
+	lang = $("body").data("lang"),
+	id = null;
+	Promise.resolve()
       .then(() => {
-        //user,day,money,work,study,stadyFull,stadyDist,stadyYor,lang
-        introStart(lang);
-        logic = new Logic(
-          data.id,
-          data.login,
-          Number(data.day),
-          Number(data.money),
-          Number(data.job),
-          Number(data.education),
-          Number(data.study_time_left),
-          lang,
-          Number(data.study_done),
-          Number(data.day_available),
-          Number(data.things_explored)
-        );
-        logic.startGame();
-        logic.contexmenuArticle("personOpen", "persons");
-        logic.contexmenuArticle("relaxOpen", "relaxs");
-        logic.contexmenuArticle("workOpen", "works");
-        logic.contexmenuArticle("labOpen", "lab");
-        logic.initPercent();
+        $.ajax({
+		  type: "POST",
+		  url: "http://" + window.location.hostname + "/page.php",
+		  dataType: "json",
+		  data: {
+		    functionname: "add_user", // пишешь какую функцию хочешь взять, список находится в page.php(set_params_user, get_params_things, add_user, isUser)
+		    params: {
+		      // это наш масив параметров
+		      login: 'login' //сюда передаешь id пользователя
+		    }
+		  },
+		  success: function(data) {
+		  	id = data;
+		  }
+		});
+
       })
       .then(() => {
-        Promise.resolve()
-          .then(() => {
-            return $.getJSON("/lang/" + lang + ".json");
-          })
-          .then(inf => {
-            room = new Room(Number(data.id), inf);
-            room.init();
-            laboratory = new Laboratory(Number(data.id), inf);
-            laboratory.init();
-            rockets = new Rockets(
-              Number(data.id),
-              Number(data.level_explore),
-              inf
-            );
-            rockets.init();
-            //sex,health
-            ava = new Ava();
-            freeTime = new FreeTime();
-          });
+        $.ajax({
+		  type: "POST",
+		  url: "http://" + window.location.hostname + "/page.php",
+		  dataType: "json",
+		  data: {
+		    functionname: "get_params_things", // пишешь какую функцию хочешь взять, список находится в page.php(set_params_user, get_params_things, add_user, isUser)
+		    name: "users",
+		    params: {
+		      // это наш масив параметров
+		      id: id //сюда передаешь id пользователя
+		    }
+		  },
+		  success: function(data) {
+		    Promise.resolve()
+		      .then(() => {
+		        //user,day,money,work,study,stadyFull,stadyDist,stadyYor,lang
+		        introStart(lang);
+		        logic = new Logic(
+		          data.id,
+		          data.login,
+		          Number(data.day),
+		          Number(data.money),
+		          Number(data.job),
+		          Number(data.education),
+		          Number(data.study_time_left),
+		          lang,
+		          Number(data.study_done),
+		          Number(data.day_available),
+		          Number(data.things_explored)
+		        );
+		        logic.startGame();
+		        logic.contexmenuArticle("personOpen", "persons");
+		        logic.contexmenuArticle("relaxOpen", "relaxs");
+		        logic.contexmenuArticle("workOpen", "works");
+		        logic.contexmenuArticle("labOpen", "lab");
+		        logic.initPercent();
+		      })
+		      .then(() => {
+		        Promise.resolve()
+		          .then(() => {
+		            return $.getJSON("/lang/" + lang + ".json");
+		          })
+		          .then(inf => {
+		            room = new Room(Number(data.id), inf);
+		            room.init();
+		            laboratory = new Laboratory(Number(data.id), inf);
+		            laboratory.init();
+		            rockets = new Rockets(
+		              Number(data.id),
+		              Number(data.level_explore),
+		              inf
+		            );
+		            rockets.init();
+		            //sex,health
+		            ava = new Ava();
+		            freeTime = new FreeTime();
+		          });
+		      });
+		  }
+		});
+
       });
-  }
-});

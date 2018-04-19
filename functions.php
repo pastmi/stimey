@@ -7,7 +7,7 @@ R::ext('xdispense', function( $type ){
 });
 
 function add_user ($login) {
-	isUser($login);
+	// isUser($login);
 	$user = R::dispense( 'users' );
 	    $user->login = $login;
 	    $user->job = 1;
@@ -134,9 +134,8 @@ function add_user ($login) {
 		$rocket_level_3->active_explore = null;
 		$rocket_level_3->count_explored = 0;
 	$user->rocket_level_3 = $rocket_level_3;
+    return R::store($user);
 
-    R::store($user);
-    return $user;
 }
 function set_params_user ( $user_id, $params = array() ) {
 	$data = array();
