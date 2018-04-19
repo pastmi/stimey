@@ -294,7 +294,12 @@ main {
     flex-direction: column;
      padding: 13px;
 }
-#laboratory, #research, #rest,#training,#work,#cooperation{
+#study,
+#research,
+#rest,
+#training,
+#work,
+#cooperation {
     display: none;
 }
 #cooperation p{

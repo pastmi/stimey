@@ -108,8 +108,9 @@
 			</div>
 			<div class="main">
 				<div class="buttonChangeBlock">
-					<div class="buttonChange" href="study" id="buttonChangeOn"><img src="/img/room.png" alt="Study"><div class="after"></div></div>
-					<div class="buttonChange" href="laboratory"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
+					<div class="buttonChange" href="laboratory" id="buttonChangeOn"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
+					<div class="buttonChange" href="study" ><img src="/img/room.png" alt="Study"><div class="after"></div></div>
+					
 					<div class="buttonChange" href="research"><img src="/img/tab3.png" alt="Research"><div class="after"></div></div>
 					<div class="buttonChange" href="rest"><img src="/img/tab4.png" alt="Rest"><div class="after"></div></div>
 					<div class="buttonChange" href="training"><img src="/img/tab5.png" alt="Training"><div class="after"></div></div>
