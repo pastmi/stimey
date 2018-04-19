@@ -71,6 +71,32 @@ body {
     position: relative;
     transition: 0.3s;
 }
+.help, .toggleSong {
+    cursor: pointer;
+        position: absolute;
+       
+        color: #2c3402;
+        font-size: 17px;
+        background: white;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+       
+        
+}
+.help{
+ left: 12px;
+ top: 543px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+.toggleSong {
+left: 58px;
+top: 543px;
+}
 
 .hoverSay:hover::after {
      transition: 0.3s;

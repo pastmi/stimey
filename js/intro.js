@@ -1,9 +1,11 @@
 var animationSpeed = 600;
-
 var easing = "easeOutCubic";
+document.querySelector(".help").addEventListener('click',()=> {
+document.querySelector("#intro").style.display = "block";
 
+});
 var activeIndex = 0;
-let introStart = function (lang) {
+let introStart =  (lang)=> {
 	Promise.resolve()
 		.then(() => {
 		return $.getJSON("/lang/"+lang+".json");
@@ -71,7 +73,7 @@ let introStart = function (lang) {
 		
 	});
 }
-let start = function(photos) {
+let start = (photos)=> {
 	var isAnimating = false;
 
 

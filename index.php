@@ -20,6 +20,7 @@
 	}
 	?>
 	<body data-lang="<?php if (isset($name_lang)) echo $name_lang; ?>">
+	<audio src="./sound/musik.mp3"loop="loop" autoplay="autoplay" class="sound"></audio>
 		<main>
 			<div class='intro-block	'>
 				<div id='intro'>
@@ -39,7 +40,7 @@
 			<div class ="greyBlock">
 
 			</div>
-			<div id="preload"></div>
+					<div id="preload"></div>
 			<div class="menu">
 				<div class="avatarImg">
 
@@ -75,6 +76,8 @@
 						<img src="./img/avatar/avaMain/ava_colo3_mxxhdpi.png" class="avaChange buttomAvaChange" id="ava-6"alt="">
 					</div>
 				</div>
+				<div class="help " >?</div>
+				<div class="toggleSong" ><img src="./img/song1.png" alt=""></div>
 				<div class="status">
 					<div class="status-block hoverSay" data-title="Money" ><img src="/img/money.png" alt=""><p class="money-block"></p></div>
 					<div class="status-block hoverSay" data-title="Progress"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
@@ -528,6 +531,7 @@
 		<script src="/js/freeTime.js"></script>
 		<script src="/js/requests.js"></script>
 		<script src="/js/imge_to_data_url.js"></script>
+		<script src="/js/song.js"></script>
 		<script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
 
