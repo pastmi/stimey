@@ -48,7 +48,7 @@ class Logic {
 			$(".new-day-dayAvelible-mood").css("display", "none");
 		});
 		$("#new-day-cloase").on("click", () => {
-			if (this.day % 7 === 0) {
+			if (this.day % 3 === 0) {
 				$(".new-day-dayAvelible-mood").css("display", "flex");
 				ava.changeMood(1);
 			}
@@ -84,7 +84,7 @@ class Logic {
 			});
 			this.setRequest("users", "set_params_things", {
 				id: 1, //сюда передаешь id пользователя
-				day_available: 10
+				day_available: 2
 			});
 		});
 	}

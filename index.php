@@ -20,6 +20,7 @@
 	}
 	?>
 	<body data-lang="<?php if (isset($name_lang)) echo $name_lang; ?>">
+	<audio src="./sound/musik.mp3"loop="loop" autoplay="autoplay" class="sound"></audio>
 		<main>
 			<div class='intro-block	'>
 				<div id='intro'>
@@ -39,7 +40,7 @@
 			<div class ="greyBlock">
 
 			</div>
-			<div id="preload"></div>
+					<div id="preload"></div>
 			<div class="menu">
 				<div class="avatarImg">
 
@@ -75,29 +76,31 @@
 						<img src="./img/avatar/avaMain/ava_colo3_mxxhdpi.png" class="avaChange buttomAvaChange" id="ava-6"alt="">
 					</div>
 				</div>
+				<div class="help " >?</div>
+				<div class="toggleSong" ><img src="./img/song1.png" alt=""></div>
 				<div class="status">
-					<div class="status-block"><img src="/img/money.png" alt=""><p class="money-block"></p></div>
-					<div class="status-block"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
-					<div class="status-block"><img src="/img/health.png" alt=""><p class="health"></p></div>
-					<div class="status-block"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
-					<div class="status-block"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 
+					<div class="status-block hoverSay" data-title="Money" ><img src="/img/money.png" alt=""><p class="money-block"></p></div>
+					<div class="status-block hoverSay" data-title="Progress"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
+					<div class="status-block hoverSay" data-title="Health"><img src="/img/health.png" alt=""><p class="health"></p></div>
+					<div class="status-block hoverSay" data-title="Mood"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
+					<div class="status-block hoverSay" data-title="Sleep"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 
 						<div class="num"  id="0">8</div>
 						<div class="select"  id="div0">
 						</div>
 						</div></div>
-					<div class="status-block"><img src="/img/invent.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Invent"><img src="/img/invent.png" alt=""><div class="selectButton" >
 						<div class="num" id="1">4</div>
 						<div class="select" id="div1"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/study.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Study"><img src="/img/study.png" alt=""><div class="selectButton" >
 						<div class="num" id="2">4</div>
 						<div class="select" id="div2"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/job.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Job"><img src="/img/job.png" alt=""><div class="selectButton" >
 						<div class="num" id="3">4</div>
 						<div class="select" id="div3"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/free-time.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Free-time"><img src="/img/free-time.png" alt=""><div class="selectButton" >
 						<div class="num" id="4">4</div>
 						<div class="select" id="div4"></div>
 						</div></div>
@@ -108,8 +111,9 @@
 			</div>
 			<div class="main">
 				<div class="buttonChangeBlock">
-					<div class="buttonChange" href="study" id="buttonChangeOn"><img src="/img/room.png" alt="Study"><div class="after"></div></div>
-					<div class="buttonChange" href="laboratory"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
+					<div class="buttonChange" href="laboratory" id="buttonChangeOn"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
+					<div class="buttonChange" href="study" ><img src="/img/room.png" alt="Study"><div class="after"></div></div>
+					
 					<div class="buttonChange" href="research"><img src="/img/tab3.png" alt="Research"><div class="after"></div></div>
 					<div class="buttonChange" href="rest"><img src="/img/tab4.png" alt="Rest"><div class="after"></div></div>
 					<div class="buttonChange" href="training"><img src="/img/tab5.png" alt="Training"><div class="after"></div></div>
@@ -527,6 +531,7 @@
 		<script src="/js/freeTime.js"></script>
 		<script src="/js/requests.js"></script>
 		<script src="/js/imge_to_data_url.js"></script>
+		<script src="/js/song.js"></script>
 		<script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
 
