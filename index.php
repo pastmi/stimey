@@ -76,28 +76,28 @@
 					</div>
 				</div>
 				<div class="status">
-					<div class="status-block"><img src="/img/money.png" alt=""><p class="money-block"></p></div>
-					<div class="status-block"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
-					<div class="status-block"><img src="/img/health.png" alt=""><p class="health"></p></div>
-					<div class="status-block"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
-					<div class="status-block"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 
+					<div class="status-block hoverSay" data-title="Money" ><img src="/img/money.png" alt=""><p class="money-block"></p></div>
+					<div class="status-block hoverSay" data-title="Progress"><img src="/img/Rocket-Progress.png" alt=""><p class="rocketCount">0%</p></div>
+					<div class="status-block hoverSay" data-title="Health"><img src="/img/health.png" alt=""><p class="health"></p></div>
+					<div class="status-block hoverSay" data-title="Mood"><img src="/img/mood.png" alt=""><p class="mood"></p></div>
+					<div class="status-block hoverSay" data-title="Sleep"><img src="/img/sleep.png" alt=""> <div class="selectButton" > 
 						<div class="num"  id="0">8</div>
 						<div class="select"  id="div0">
 						</div>
 						</div></div>
-					<div class="status-block"><img src="/img/invent.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Invent"><img src="/img/invent.png" alt=""><div class="selectButton" >
 						<div class="num" id="1">4</div>
 						<div class="select" id="div1"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/study.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Study"><img src="/img/study.png" alt=""><div class="selectButton" >
 						<div class="num" id="2">4</div>
 						<div class="select" id="div2"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/job.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Job"><img src="/img/job.png" alt=""><div class="selectButton" >
 						<div class="num" id="3">4</div>
 						<div class="select" id="div3"></div>
 						</div></div>
-					<div class="status-block"><img src="/img/free-time.png" alt=""><div class="selectButton" >
+					<div class="status-block hoverSay" data-title="Free-time"><img src="/img/free-time.png" alt=""><div class="selectButton" >
 						<div class="num" id="4">4</div>
 						<div class="select" id="div4"></div>
 						</div></div>
