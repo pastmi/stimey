@@ -14,7 +14,7 @@ function add_user ($login) {
 	    $user->education = 1;
 		$user->freeTime = 0;
 	    $user->day = 0;
-	    $user->money = 300;
+	    $user->money = 3000;
 	    $user->studyTimeLeft = 0;
 	    $user->studyDone = 0;
 		$user->dayAvailable = 10;
