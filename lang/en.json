@@ -22,7 +22,7 @@
     "coomingSoon":"COMING SOON",
     "day":"Day",
     "daysAvailable":"days are available",
-    "euroIsCharged":"euro is charged",
+    "euroIsCharged":"euro is charged for the purchase",
     "euroIsEarned":"euro is earned",
     "warning":"Warning",
     "numberAvailable":"The number of available",
@@ -37,8 +37,6 @@
     "closed":"Closed",
     "ok":"Ok",
     "level":"Level",
-    "":"",
-    "":"",
 
     "S1_part_05": "Rocket assist",
     "S1_part_06":"Second stage engine",
