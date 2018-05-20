@@ -12,6 +12,7 @@ $(window).on("load", function() {
 });
 
 $(".num").on("click", function() {
+   musicPlay('click');
   $("main").off("click");
   var w = $(this).attr("id");
 
@@ -41,6 +42,7 @@ $(".num").on("click", function() {
   }
 });
 $(document).on("click", ".select p", function() {
+   musicPlay('click');
   var select = 0;
   select = parseInt($(this).text());
   $(

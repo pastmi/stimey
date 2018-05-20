@@ -396,6 +396,7 @@ function Room(id,inf) {
     stage.setChildIndex(bitmap, bitmap.zi);
     stage.update();
     bitmap.on("click", function(evt) {
+       musicPlay('click');
       let self = this;
       if (this.buy == 0) {
         if (logic.getMoney() < bitmap.money) {
@@ -408,6 +409,7 @@ function Room(id,inf) {
           });
         } else {
           $(document).on("click", "#buyButton", function() {
+             musicPlay('click');
             let thisName = $(".room .about-room-things .name").text();
             if (thisName == self.name) {
               $(".room .about-room-things h4.alert b").text("");

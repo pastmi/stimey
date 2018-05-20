@@ -2,6 +2,7 @@ let play = true,
   soundBlock = document.querySelector(".sound"),
   song = document.querySelector(".toggleSong");
 let toggleSound = () => {
+  musicPlay('click');
   if (play) {
    
     soundBlock.pause();

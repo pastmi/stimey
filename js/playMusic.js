@@ -1,10 +1,10 @@
 let effect = document.querySelector('.effect');
 
- function musicPlay(music){
+ function musicPlay(name){
     let music = null;
-    switch (music) {
+    switch (name) {
         case 'click':
-            music = './img/click.png';
+            music = './sound/click.mp3';
             break;
     
         default:

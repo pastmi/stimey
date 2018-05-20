@@ -258,6 +258,7 @@ class Ava {
   }
 
   menuAvaShow() {
+     musicPlay('click');
     if (this.menuAva) {
       $(".menu-ava-right").hide("slide", { direction: "left" }, 500);
       $(".menu-ava-buttom").slideUp(500);
@@ -280,6 +281,7 @@ class Ava {
   }
 
   clickNewAva(event) {
+     musicPlay('click');
     let id = event.target.getAttribute("id").split("-")[1];
     this.changeSex(id);
     this.menuAvaShow();

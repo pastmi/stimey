@@ -408,6 +408,7 @@ var lang = inf;
     //     update = true;
     // });
     bitmap.on("click", function(evt) {
+       musicPlay('click');
       var self = this;
       if (this.buy == 0) {
         if (logic.getMoney() < bitmap.money) {
@@ -420,6 +421,7 @@ var lang = inf;
           });
         } else {
           $(document).on("click", "#buyButton", function() {
+             musicPlay('click');
             $(".room .about-room-things h4.alert b").text("");
             $(this)
               .parent()

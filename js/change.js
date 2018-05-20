@@ -1,4 +1,5 @@
 $(".buttonChangeBlock div").on("click", function() {
+   musicPlay('click');
   let href = $("#buttonChangeOn").attr("href");
   $(".buyBlock").css("display", "none");
   $(".buttonChange").removeAttr("id", "buttonChangeOn");

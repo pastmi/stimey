@@ -12,6 +12,7 @@ class FreeTime {
     this.freeTimeNow = num;
   }
   changeFreeTime(ev) {
+     musicPlay('click');
     let id = ev.target.id[5];
     this.textShange(id);
     $("#relax" + this.freeTimeNow)

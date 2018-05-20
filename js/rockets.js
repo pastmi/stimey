@@ -1121,6 +1121,7 @@ function Rockets(id, levelExplore,inf) {
       $("#Level2").removeClass("blocked");
       $("#Level2").on("click", function() {
         fly = true;
+         musicPlay('click');
         logic.setRequest("users", "set_params_things", {
           id: id, //сюда передаешь id пользователя
           level_explore: 2
@@ -1129,6 +1130,7 @@ function Rockets(id, levelExplore,inf) {
     } else if (level == 2 && thingsExplored == 10) {
       $("#Level3").removeClass("blocked");
       $("#Level3").on("click", function() {
+         musicPlay('click');
         level = 3;
         levelExplore = 3;
         logic.setRequest("users", "set_params_things", {
@@ -1284,6 +1286,7 @@ function Rockets(id, levelExplore,inf) {
     //     update = true;
     // });
     bitmap.on("click", function(evt) {
+       musicPlay('click');
       let self = this;
       if (this.explored == 0 && globalActiveExplore.explored == 0) {
         if (self.activeExplore == 1) {
@@ -1293,6 +1296,7 @@ function Rockets(id, levelExplore,inf) {
           );
         } else {
           $(document).on("click", "#buyButton", function() {
+             musicPlay('click');
             let thisName = $(".room .about-rocket-things .name").text();
             if (thisName == self.name) {
               $(".room .about-rocket-things .buttonRun").css({

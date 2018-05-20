@@ -88,7 +88,10 @@ let start = (photos)=> {
 			.html(i===8 ? photos[i-1].title : i)
 			.data("index", i-1)
 			.attr("title", photos[i-1].title)
-			.click(	i===8 ? ()=>exit() : function() {showImage($(this))})
+			.click(	i===8 ? ()=>exit() : function() {
+				showImage($(this))
+			 musicPlay('click');
+			})
 			.appendTo(
 			$("<li />")
 			.appendTo(".navbox ul")
@@ -125,6 +128,7 @@ let start = (photos)=> {
 		startAnimation(imageIndex);
 	};
 	var exit = ()=>{
+		musicPlay('click');
 		document.querySelector('#intro').style.display = 'none';
 	}
 

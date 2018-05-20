@@ -42,12 +42,16 @@ class Logic {
     this.activeRadioButton();
     this.changeTextStudy(1);
     this.workActive(this.work);
-    $("#newDay").on("click", this.nextDay);
+    $("#newDay").on("click", ()=> {
+       musicPlay('click');
+     this.nextDay()});
     $("#btn-work").on("click", this.workChangeActive);
     $(".cloas-dayAvelible-mood").on("click", function() {
       $(".new-day-dayAvelible-mood").css("display", "none");
+       musicPlay('click');
     });
     $("#new-day-cloase").on("click", () => {
+       musicPlay('click');
       if (this.day % 3 === 0) {
         $(".new-day-dayAvelible-mood").css("display", "flex");
         ava.changeMood(1);
@@ -59,11 +63,16 @@ class Logic {
     $(".about-closed").on("mouseleave", this.cloaseContextMeny);
     $("#closedOk").on("click", this.cloaseContextMeny);
     $(".newDayOverflow").on("click", function() {
+       musicPlay('click');
       $(".new-day").css("display", "none");
       $(".newDayOverflow").css("display", "none");
     });
-    $("#new-day-ask-cloase").on("click", this.checkAsk);
+    $("#new-day-ask-cloase").on("click", ()=>{
+       musicPlay('click');
+       this.checkAsk();
+    } );
     $(".cloas-dayAvelible").on("click", function() {
+       musicPlay('click');
       $(".new-day-dayAvelible").css("display", "none");
       $(".greyBlock").css("display", "none");
     });
@@ -178,6 +187,7 @@ class Logic {
   }
 
   cloaseContextMeny() {
+     musicPlay('click');
     $(".about-closed").css("display", "none");
   }
 
@@ -217,8 +227,8 @@ class Logic {
     for (let a = 0; a < 5; a++) {
       $("#work" + a).removeClass("workActive");
     }
-    let num = parseInt(ev.target.getAttribute("work")) + 1;
-    this.work = num;
+    let num = parseInt(ev.target.getAttribute("work"));
+    this.work = num+1;
     $("#work" + num).addClass("workActive");
     $(".room .about-works").css("display", "none");
     this.setWorkText(num);
@@ -251,6 +261,7 @@ class Logic {
   }
 
   nextDayRender() {
+ 
     this.nextContext();
     this.moneyAppend();
     this.studyClosedimg();
@@ -266,6 +277,7 @@ class Logic {
   }
 
   nextDay() {
+    
     let flag = 1;
     Promise.resolve()
       .then(() => {
@@ -387,7 +399,7 @@ class Logic {
           var args = rockets.getArgs();
           args[args.active_explore] =
             Number(args[args.active_explore]) - Number($("#1").text());
-          console.log(logic.thingsExplored);
+         
 
           if (args[args.active_explore] <= 0) {
             this.thingsExplored++;

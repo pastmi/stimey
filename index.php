@@ -450,7 +450,7 @@
 								</div>
 							</div>
 							<div class="buttonRun buttonStudy"> 
-								<p id="study"><?php if ( isset ( $lang['study'] ) ) echo $lang['study']; ?></p>
+								<p class="study"><?php if ( isset ( $lang['study'] ) ) echo $lang['study']; ?></p>
 							</div>
 						</div>
 					</div>
@@ -521,6 +521,7 @@
 		</main>
 		<script src="/js/jquery-3.2.1.min.js"></script>
 		<script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+			<script src="/js/playMusic.js"></script>
 		<script src="/js/jquery-ui.min.js"></script>
 		<script src="/js/circle-progress.js"></script>
 		<script src="/js/mainLogic.js"></script>
@@ -540,6 +541,6 @@
 		<script src="/js/rockets.js"></script>
 		
 		<script src="/js/ava.js"></script>
-		<script src="/js/playMusic.js"></script>
+	
 	</body>
 </html>
