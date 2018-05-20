@@ -40,7 +40,7 @@ function Room(id,inf) {
           0.7,
          	lang['vibro_plate'],
           "",
-          250,
+          319,
           data.vibro_plate,
           1,
           "vibro_plate"
@@ -52,7 +52,7 @@ function Room(id,inf) {
           1,
          lang['table_PC'],
           "",
-          250,
+          292,
           data.table_pc,
           2,
           "table_pc"
@@ -64,7 +64,7 @@ function Room(id,inf) {
           1,
           lang['bed'],
           "",
-          50,
+          285,
           data.bed,
           2,
           "bed"
@@ -76,7 +76,7 @@ function Room(id,inf) {
           1,
           lang['books'],
           "",
-          250,
+          196,
           data.books,
           2,
           "books"
@@ -88,7 +88,7 @@ function Room(id,inf) {
           1,
           lang['curtain'],
           "",
-          250,
+          149,
           data.curtain,
           2,
           "curtain"
@@ -100,7 +100,7 @@ function Room(id,inf) {
           1,
           lang['lamp_table'],
           "",
-          250,
+          398,
           data.lamp_table,
           14,
           "lamp_table"
@@ -112,7 +112,7 @@ function Room(id,inf) {
           1,
           lang['lamp_top'],
           "",
-          250,
+          187,
           data.lamp_top,
           1,
           "lamp_top"
@@ -124,7 +124,7 @@ function Room(id,inf) {
           1,
          lang['poster'],
           "",
-          250,
+          378,
           data.poster,
           2,
           "poster"
@@ -136,7 +136,7 @@ function Room(id,inf) {
           1,
           lang['TV'],
           "",
-          250,
+          341,
           data.tv,
           10,
           "tv"
@@ -148,7 +148,7 @@ function Room(id,inf) {
           1,
           lang['scooter'],
           "",
-          250,
+          192,
           data.scooter,
           2,
           "scooter"
@@ -160,7 +160,7 @@ function Room(id,inf) {
           1,
           lang['planet_system'],
           "",
-          250,
+          196,
           data.planet_system,
           2,
           "planet_system"
@@ -172,7 +172,7 @@ function Room(id,inf) {
           1,
           lang['robot_vacuum_cleaner'],
           "",
-          250,
+          400,
           data.robot_vacuum_cleaner,
           2,
           "robot_vacuum_cleaner"
@@ -184,7 +184,7 @@ function Room(id,inf) {
           1,
           lang['jetpack'],
           "",
-          250,
+          295,
           data.jetpack,
           15,
           "jetpack"
@@ -196,7 +196,7 @@ function Room(id,inf) {
           1,
           lang['wardrobe'],
           "",
-          250,
+          251,
           data.wardrobe,
           555,
           "wardrobe"
@@ -208,7 +208,7 @@ function Room(id,inf) {
           1,
          lang['robot'],
           "",
-          250,
+          333,
           data.robot,
           100,
           "robot"
@@ -220,7 +220,7 @@ function Room(id,inf) {
           1,
           lang['sneakers'],
           "",
-          250,
+          376,
           data.sneakers,
           4,
           "sneakers"
@@ -232,7 +232,7 @@ function Room(id,inf) {
           1,
           lang['guitar'],
           "",
-          250,
+          119,
           data.guitar,
           16,
           "guitar"
@@ -244,7 +244,7 @@ function Room(id,inf) {
           1,
           lang['chair'],
           "",
-          250,
+          268,
           data.chair,
           17,
           "chair"
@@ -256,7 +256,7 @@ function Room(id,inf) {
           1,
           lang['table'],
           "",
-          250,
+          144,
           data.table,
           155,
           "table"
@@ -268,7 +268,7 @@ function Room(id,inf) {
           1,
           lang['PC'],
           "",
-          250,
+          328,
           data.pc,
           14,
           "pc"
@@ -280,7 +280,7 @@ function Room(id,inf) {
           1,
           lang['phone'],
           "",
-          250,
+          108,
           data.phone,
           156,
           "phone"
@@ -292,7 +292,7 @@ function Room(id,inf) {
           1,
          lang['paret'],
           "",
-          250,
+          331,
           data.paret,
           157,
           "paret"
@@ -304,7 +304,7 @@ function Room(id,inf) {
           1,
           lang['plate_and_cup'],
           "",
-          250,
+          249,
           data.plate_and_cup,
           158,
           "plate_and_cup"
@@ -316,7 +316,7 @@ function Room(id,inf) {
           1,
           lang['cactus'],
           "",
-          250,
+          184,
           data.cactus,
           15,
           "cactus"
@@ -370,7 +370,7 @@ function Room(id,inf) {
       0 // alpha
     ]);
     var Original = new createjs.ColorFilter();
-    var RedMask = new createjs.ColorFilter(0, 0, 0, 1, 255, 0, 0, 0);
+    var RedMask = new createjs.ColorFilter(0, 0, 0, 1, 1, 0, 0, -90);
     bitmap = new createjs.Bitmap(image);
     stage.addChild(bitmap);
     bitmap.x = event.target.getAttribute("x");

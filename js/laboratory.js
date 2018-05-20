@@ -42,7 +42,7 @@ var lang = inf;
           1,
           lang['lab_01'],
           "",
-          250,
+          353,
           data.test_chamber,
           5,
           "test_chamber"
@@ -54,7 +54,7 @@ var lang = inf;
           1,
           lang['lab_02'],
           "",
-          250,
+          196,
           data.cabinet,
           1,
           "cabinet"
@@ -66,7 +66,7 @@ var lang = inf;
           1,
           lang['lab_03'],
           "",
-          50,
+          240,
           data.gas_analyser,
           1,
           "gas_analyser"
@@ -78,7 +78,7 @@ var lang = inf;
           1,
           lang['lab_04'],
           "",
-          250,
+          390,
           data.notice_board,
           5,
           "notice_board"
@@ -90,7 +90,7 @@ var lang = inf;
           1,
           lang['lab_05'],
           "",
-          250,
+          298,
           data.lab_bench,
           1,
           "lab_bench"
@@ -102,7 +102,7 @@ var lang = inf;
           1,
           lang['lab_06'],
           "",
-          250,
+          380,
           data.reagent_cabinet,
           2,
           "reagent_cabinet"
@@ -114,7 +114,7 @@ var lang = inf;
           1,
           lang['lab_07'],
           "",
-          250,
+          135,
           data.climate_chamber,
           6,
           "climate_chamber"
@@ -126,7 +126,7 @@ var lang = inf;
           1,
           lang['lab_08'],
           "",
-          250,
+          315,
           data.set_of_tools,
           3,
           "set_of_tools"
@@ -138,7 +138,7 @@ var lang = inf;
           1,
           lang['lab_09'],
           "",
-          250,
+          158,
           data.laboratory_robot,
           6,
           "laboratory_robot"
@@ -150,7 +150,7 @@ var lang = inf;
           1,
           lang['lab_10'],
           "",
-          250,
+          394,
           data.recording_oscillometer,
           7,
           "recording_oscillometer"
@@ -162,7 +162,7 @@ var lang = inf;
           1,
           lang['lab_11'],
           "",
-          250,
+          162,
           data.centrifuge,
           5,
           "centrifuge"
@@ -174,7 +174,7 @@ var lang = inf;
           1,
          lang['lab_12'],
           "",
-          250,
+          319,
           data.drawing_table,
           4,
           "drawing_table"
@@ -186,7 +186,7 @@ var lang = inf;
           1.2,
           lang['lab_13'],
           "",
-          250,
+          266,
           data.electronic_scale,
           5,
           "electronic_scale"
@@ -198,7 +198,7 @@ var lang = inf;
           1,
          lang['lab_14'],
           "",
-          250,
+          302,
           data.temperature_meter,
           5,
           "temperature_meter"
@@ -210,7 +210,7 @@ var lang = inf;
           1,
          lang['lab_15'],
           "",
-          250,
+          192,
           data.amperemeter,
           4,
           "amperemeter"
@@ -222,7 +222,7 @@ var lang = inf;
           1.2,
           lang['lab_16'],
           "",
-          250,
+          133,
           data.supercomputer,
           6,
           "supercomputer"
@@ -234,7 +234,7 @@ var lang = inf;
           1.2,
          lang['lab_17'],
           "",
-          250,
+          360,
           data.voltage_meter,
           5,
           "voltage_meter"
@@ -246,7 +246,7 @@ var lang = inf;
           1.2,
           lang['lab_18'],
           "",
-          250,
+          196,
           data.aspirator,
           5,
           "aspirator"
@@ -258,7 +258,7 @@ var lang = inf;
           1,
           lang['lab_19'],
           "",
-          250,
+          362,
           data.set_for_drawing,
           5,
           "set_for_drawing"
@@ -270,7 +270,7 @@ var lang = inf;
           1,
          lang['lab_20'],
           "",
-          250,
+          203,
           data.moisture_analyzer,
           5,
           "moisture_analyzer"
@@ -282,7 +282,7 @@ var lang = inf;
           1,
          lang['lab_21'],
           "",
-          250,
+          210,
           1,
           5
         );
@@ -293,7 +293,7 @@ var lang = inf;
           1,
           lang['lab_22'],
           "",
-          250,
+          228,
           data.microscope,
           5,
           "microscope"
@@ -305,7 +305,7 @@ var lang = inf;
           1,
          lang['lab_23'],
           "",
-          250,
+          253,
           data.set_of_flasks,
           12,
           "set_of_flasks"
@@ -317,7 +317,7 @@ var lang = inf;
           1,
          lang['lab_24'],
           "",
-          250,
+          216,
           data.alcohol_burner,
           12,
           "alcohol_burner"
@@ -370,7 +370,7 @@ var lang = inf;
       0 // alpha
     ]);
     var Original = new createjs.ColorFilter();
-    var RedMask = new createjs.ColorFilter(0, 0, 0, 1, 255, 0, 0, 0);
+    var RedMask = new createjs.ColorFilter(0, 0, 0, 1, 1, 0, 0, -90);
     bitmap = new createjs.Bitmap(image);
     stageL.addChild(bitmap);
     bitmap.x = event.target.getAttribute("x");
