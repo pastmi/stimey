@@ -21,6 +21,7 @@
 	?>
 	<body data-lang="<?php if (isset($name_lang)) echo $name_lang; ?>">
 	<audio src="./sound/musik.mp3"loop="loop" autoplay="autoplay" class="sound"></audio>
+	<audio src="./sound/musik.mp3" class="effect"></audio>
 		<main>
 			<div class='intro-block	'>
 				<div id='intro'>
@@ -537,8 +538,8 @@
 
 		<script src="/js/laboratory.js"></script>
 		<script src="/js/rockets.js"></script>
-		<!--		<script src="/js/rocket.js"></script>-->
+		
 		<script src="/js/ava.js"></script>
-
+		<script src="/js/playMusic.js"></script>
 	</body>
 </html>
