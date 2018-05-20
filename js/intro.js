@@ -14,7 +14,7 @@ let introStart =  (lang)=> {
 		var photos = [ {
 			"title" : inf['intro1'][0],
 			"cssclass" : "Aperture",
-			"image" : "START.png",
+			"image" : "STA.png",
 			"text" : inf['intro1'][1],
 			"url" : 'http://www.sxc.hu/photo/1270466',
 			"urltext" : 'View picture'

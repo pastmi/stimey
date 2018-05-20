@@ -1,7 +1,6 @@
 let play = true,
   soundBlock = document.querySelector(".sound"),
   song = document.querySelector(".toggleSong");
-
 let toggleSound = () => {
   if (play) {
    

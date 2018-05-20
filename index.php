@@ -111,14 +111,14 @@
 			</div>
 			<div class="main">
 				<div class="buttonChangeBlock">
-					<div class="buttonChange" href="laboratory" id="buttonChangeOn"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
-					<div class="buttonChange" href="study" ><img src="/img/room.png" alt="Study"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['explore'] ) ) echo $lang['explore']; ?>" href="laboratory" id="buttonChangeOn"><img src="/img/settings.png" alt="Laboratory"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['livingRoom'] ) ) echo $lang['livingRoom']; ?>" href="study" ><img src="/img/room.png" alt="Study"><div class="after"></div></div>
 					
-					<div class="buttonChange" href="research"><img src="/img/tab3.png" alt="Research"><div class="after"></div></div>
-					<div class="buttonChange" href="rest"><img src="/img/tab4.png" alt="Rest"><div class="after"></div></div>
-					<div class="buttonChange" href="training"><img src="/img/tab5.png" alt="Training"><div class="after"></div></div>
-					<div class="buttonChange" href="work"><img src="/img/tab6.png" alt="Work"><div class="after"></div></div>
-					<div class="buttonChange" href="cooperation"><img src="/img/tab7.png" alt="Cooperation"><div class="after"></div></div> 
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['laboratory'] ) ) echo $lang['laboratory']; ?>" href="research"><img src="/img/tab3.png" alt="Research"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['study'] ) ) echo $lang['study']; ?>" href="rest"><img src="/img/tab4.png" alt="Rest"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['work'] ) ) echo $lang['work']; ?>" href="training"><img src="/img/tab5.png" alt="Training"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['freeTime'] ) ) echo $lang['freeTime']; ?>" href="work"><img src="/img/tab6.png" alt="Work"><div class="after"></div></div>
+					<div class="buttonChange hoverSay" data-title="<?php if ( isset ( $lang['coomingSoon'] ) ) echo $lang['coomingSoon']; ?>" href="cooperation"><img src="/img/tab7.png" alt="Cooperation"><div class="after"></div></div> 
 
 
 
