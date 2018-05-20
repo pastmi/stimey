@@ -20,7 +20,7 @@
 	}
 	?>
 	<body data-lang="<?php if (isset($name_lang)) echo $name_lang; ?>">
-	<audio src="./sound/musik.mp3"loop="loop" autoplay="autoplay" class="sound"></audio>
+	<!-- <audio src="./sound/musik.mp3"loop="loop" autoplay="autoplay" class="sound"></audio> -->
 	<audio src="./sound/musik.mp3" class="effect"></audio>
 		<main>
 			<div class='intro-block	'>

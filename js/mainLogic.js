@@ -192,6 +192,7 @@ class Logic {
   }
 
   contexmenuClosed(e) {
+     musicPlay('click');
     if (!$(this).hasClass("closed")) {
       return;
     }
@@ -223,6 +224,7 @@ class Logic {
   }
 
   workChangeActive(ev) {
+     musicPlay('click');
     let target = ev.target;
     for (let a = 0; a < 5; a++) {
       $("#work" + a).removeClass("workActive");
@@ -543,8 +545,10 @@ class Logic {
   }
 
   contexmenuArticle(clickedClass, hiddenClass) {
+    
     let self = this;
     $(document).on("contextmenu", "." + clickedClass + "", function(e) {
+       musicPlay('click');
       let x = e.pageX;
       let y = e.pageY,
         id;
@@ -627,7 +631,9 @@ class Logic {
   }
 
   aboutStudyWindow() {
+    
     $(document).on("click", ".overlay, .buttonStudy", function() {
+          musicPlay('click');
       $(".about-persons").css({
         display: "none",
         top: "inherit",
@@ -641,8 +647,10 @@ class Logic {
   }
 
   activeRadioButton() {
+   
     let self = this;
     $(document).on("click", ".choose-radio-button", function() {
+        musicPlay('click');
       var activeBtn = $(".about-persons").find("div[data-active=1]");
       activeBtn.children().remove();
       activeBtn.attr("data-active", "0");
