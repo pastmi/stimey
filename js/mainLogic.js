@@ -42,16 +42,17 @@ class Logic {
     this.activeRadioButton();
     this.changeTextStudy(1);
     this.workActive(this.work);
-    $("#newDay").on("click", ()=> {
-       musicPlay('click');
-     this.nextDay()});
+    $("#newDay").on("click", () => {
+      musicPlay('click');
+      this.nextDay()
+    });
     $("#btn-work").on("click", this.workChangeActive);
-    $(".cloas-dayAvelible-mood").on("click", function() {
+    $(".cloas-dayAvelible-mood").on("click", function () {
       $(".new-day-dayAvelible-mood").css("display", "none");
-       musicPlay('click');
+      musicPlay('click');
     });
     $("#new-day-cloase").on("click", () => {
-       musicPlay('click');
+      musicPlay('click');
       if (this.day % 3 === 0) {
         $(".new-day-dayAvelible-mood").css("display", "flex");
         ava.changeMood(1);
@@ -62,17 +63,17 @@ class Logic {
     $(".closed").on("contextmenu", this.contexmenuClosed);
     $(".about-closed").on("mouseleave", this.cloaseContextMeny);
     $("#closedOk").on("click", this.cloaseContextMeny);
-    $(".newDayOverflow").on("click", function() {
-       musicPlay('click');
+    $(".newDayOverflow").on("click", function () {
+      musicPlay('click');
       $(".new-day").css("display", "none");
       $(".newDayOverflow").css("display", "none");
     });
-    $("#new-day-ask-cloase").on("click", ()=>{
-       musicPlay('click');
-       this.checkAsk();
-    } );
-    $(".cloas-dayAvelible").on("click", function() {
-       musicPlay('click');
+    $("#new-day-ask-cloase").on("click", () => {
+      musicPlay('click');
+      this.checkAsk();
+    });
+    $(".cloas-dayAvelible").on("click", function () {
+      musicPlay('click');
       $(".new-day-dayAvelible").css("display", "none");
       $(".greyBlock").css("display", "none");
     });
@@ -88,7 +89,7 @@ class Logic {
         $(".greyBlock").css("display", "block");
         $("#new-day-ask-cloase").attr("href", inf["ask" + i][1]);
         $(".askNum").text(inf["ask" + i][0]);
-        $(".askComp").on("click", function() {
+        $(".askComp").on("click", function () {
           $(".hint").text(inf["ask" + i][1]);
         });
         this.setRequest("users", "set_params_things", {
@@ -157,7 +158,7 @@ class Logic {
       .circleProgress({
         value: percentageBued > 100 ? 100 : percentageBued
       })
-      .on("circle-animation-progress", function(event, progress) {
+      .on("circle-animation-progress", function (event, progress) {
         $(this)
           .find("strong")
           .html(Math.round(percentageBued * 100 * progress) + "<i>%</i>");
@@ -187,12 +188,12 @@ class Logic {
   }
 
   cloaseContextMeny() {
-     musicPlay('click');
+    musicPlay('click');
     $(".about-closed").css("display", "none");
   }
 
   contexmenuClosed(e) {
-     musicPlay('click');
+    musicPlay('click');
     if (!$(this).hasClass("closed")) {
       return;
     }
@@ -224,13 +225,13 @@ class Logic {
   }
 
   workChangeActive(ev) {
-     musicPlay('click');
+    musicPlay('click');
     let target = ev.target;
     for (let a = 0; a < 5; a++) {
       $("#work" + a).removeClass("workActive");
     }
     let num = parseInt(ev.target.getAttribute("work"));
-    this.work = num+1;
+    this.work = num + 1;
     $("#work" + num).addClass("workActive");
     $(".room .about-works").css("display", "none");
     this.setWorkText(num);
@@ -263,7 +264,7 @@ class Logic {
   }
 
   nextDayRender() {
- 
+
     this.nextContext();
     this.moneyAppend();
     this.studyClosedimg();
@@ -279,7 +280,7 @@ class Logic {
   }
 
   nextDay() {
-    
+
     let flag = 1;
     Promise.resolve()
       .then(() => {
@@ -401,7 +402,7 @@ class Logic {
           var args = rockets.getArgs();
           args[args.active_explore] =
             Number(args[args.active_explore]) - Number($("#1").text());
-         
+
 
           if (args[args.active_explore] <= 0) {
             this.thingsExplored++;
@@ -444,7 +445,7 @@ class Logic {
       .circleProgress({
         value: prog
       })
-      .on("circle-animation-progress", function(event, progress) {
+      .on("circle-animation-progress", function (event, progress) {
         $(this)
           .find("strong")
           .html(Math.round(val * progress) + "<i>%</i>");
@@ -490,8 +491,8 @@ class Logic {
               );
             this.circleReset(
               this.stadyFull /
-                val["person" + (this.study - 1)].distanceDay *
-                100
+              val["person" + (this.study - 1)].distanceDay *
+              100
             );
             break;
           case 3:
@@ -510,8 +511,8 @@ class Logic {
               );
             this.circleReset(
               this.stadyFull /
-                val["person" + (this.study - 1)].yourselfDay *
-                100
+              val["person" + (this.study - 1)].yourselfDay *
+              100
             );
             break;
         }
@@ -545,10 +546,10 @@ class Logic {
   }
 
   contexmenuArticle(clickedClass, hiddenClass) {
-    
+
     let self = this;
-    $(document).on("contextmenu", "." + clickedClass + "", function(e) {
-       musicPlay('click');
+    $(document).on("contextmenu", "." + clickedClass + "", function (e) {
+      musicPlay('click');
       let x = e.pageX;
       let y = e.pageY,
         id;
@@ -608,15 +609,16 @@ class Logic {
           });
         });
     });
-    $(".room .about-" + hiddenClass).on("mouseleave", function() {
+    $(".room .about-" + hiddenClass).on("mouseleave", function () {
       $(".room .about-" + hiddenClass).css("display", "none");
     });
 
-    $(document).on("contextmenu", function(e) {
+    $(document).on("contextmenu", function (e) {
       e.preventDefault();
     });
+
     function activeRadioButton() {
-      $(document).on("click", ".choose-radio-button", function() {
+      $(document).on("click", ".choose-radio-button", function () {
         var activeBtn = $(this)
           .parent()
           .parent()
@@ -631,26 +633,28 @@ class Logic {
   }
 
   aboutStudyWindow() {
-    
-    $(document).on("click", ".overlay, .buttonStudy", function() {
-          musicPlay('click');
+
+    $(document).on("click", ".overlay, .buttonStudy", function () {
+      musicPlay('click');
       $(".about-persons").css({
         display: "none",
         top: "inherit",
         bottom: "inherit",
         left: "inherit"
       });
-      $(".overlay").css({ display: "none" });
+      $(".overlay").css({
+        display: "none"
+      });
       $(".about-persons").removeClass("block-after");
       $(".about-persons").removeClass("block-before");
     });
   }
 
   activeRadioButton() {
-   
+
     let self = this;
-    $(document).on("click", ".choose-radio-button", function() {
-        musicPlay('click');
+    $(document).on("click", ".choose-radio-button", function () {
+      musicPlay('click');
       var activeBtn = $(".about-persons").find("div[data-active=1]");
       activeBtn.children().remove();
       activeBtn.attr("data-active", "0");
@@ -658,8 +662,8 @@ class Logic {
       $(this).attr("data-active", 1);
       if (
         $(this)
-          .siblings()
-          .attr("class") === "description"
+        .siblings()
+        .attr("class") === "description"
       ) {
         self.changeTextStudy(2);
         self.stadyNow = 2;
@@ -667,8 +671,8 @@ class Logic {
       }
       if (
         $(this)
-          .siblings()
-          .attr("class") === "description-low"
+        .siblings()
+        .attr("class") === "description-low"
       ) {
         self.changeTextStudy(3);
         self.stadyNow = 3;
@@ -676,8 +680,8 @@ class Logic {
       }
       if (
         $(this)
-          .siblings()
-          .attr("class") === "description-full"
+        .siblings()
+        .attr("class") === "description-full"
       ) {
         self.changeTextStudy(1);
         self.stadyNow = 1;
@@ -720,7 +724,7 @@ $.ajax({
             id: id //сюда передаешь id пользователя
           }
         },
-        success: function(data) {
+        success: function (data) {
           Promise.resolve()
             .then(() => {
               //user,day,money,work,study,stadyFull,stadyDist,stadyYor,lang
