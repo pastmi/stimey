@@ -356,6 +356,7 @@
 							<span><?php if ( isset ( $lang['stepsIs'] ) ) echo $lang['stepsIs']; ?></span><br>
 
 							<div id="new-day-ask"><span class="askNum"></span><span>= </span><input class="numberInput" type="number"> <span class="askComp"> ?</span></div>	
+							<p class="next-question">Next question</p>
 							<p class="hint"></p>	
 							<div class="new-day-buttonRun buttonRun"> 
 								<p id="new-day-ask-cloase"><?php if ( isset ( $lang['check'] ) ) echo $lang['check']; ?></p>
