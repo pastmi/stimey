@@ -780,3 +780,13 @@ $.ajax({
         });
     }
 });
+$('#head').on('click', function () {
+    $(this).find('img').each(function () {
+        $(this).hasClass('hidden') ?
+            $(this).removeClass('hidden')
+            :
+            $(this).addClass('hidden');
+    });
+    $('.rocket').hasClass('hidden') ? $('.rocket').removeClass('hidden') : $('.rocket').addClass('hidden');
+    $('.house').hasClass('hidden') ? $('.house').removeClass('hidden') : $('.house').addClass('hidden');
+});
