@@ -145,17 +145,26 @@
 						</div>
 					</div>
 					<div id="laboratory">
-						<canvas id="rocketCanvas" width="602" height="549"></canvas>
-						<div class="divButtonLaboratory">
-							<div class="buttonRun buttonLaboratory"> 
-								<p id="Level3"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 3</p>
+						<div id="head" class="head">
+						    <img src="/img/Rocket-Progress.png" class="" alt="">
+						    <img src="./img/laboratory/house/678085-house-128.png" class="hidden" alt="">
+						</div>
+									<div class="rocket">
+						    <canvas id="rocketCanvas" width="602" height="549"></canvas>
+						    <div class="divButtonLaboratory">
+							<div class="buttonRun buttonLaboratory">
+							    <p id="Level3"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 3</p>
 							</div>
-							<div class="buttonRun buttonLaboratory"> 
-								<p id="Level2"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 2</p>
+							<div class="buttonRun buttonLaboratory">
+							    <p id="Level2"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 2</p>
 							</div>
-							<div class="buttonRun buttonLaboratory buttonLaboratoryActive"> 
-								<p id="Level1"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 1</p>
+							<div class="buttonRun buttonLaboratory buttonLaboratoryActive">
+							    <p id="Level1"><?php if ( isset ( $lang['level'] ) ) echo $lang['level']; ?> 1</p>
 							</div>
+						    </div>
+						</div>
+						<div class="house hidden">
+						    <img src="./img/laboratory/house/depositphotos_8259726-stock-photo-constructor-house.jpg" alt="">
 						</div>
 					</div>
 					<div id="research">
